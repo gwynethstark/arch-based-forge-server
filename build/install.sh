@@ -14,7 +14,7 @@ su nobody -c "yay -S ${aur_packages} --noconfirm --needed"
 ####
 
 # define comma separated list of paths 
-install_paths="/srv/forge,/home/nobody"
+install_paths="/etc/conf.d,/srv,/home/nobody"
 
 # split comma separated string into list for install paths
 IFS=',' read -ra install_paths_list <<< "${install_paths}"
